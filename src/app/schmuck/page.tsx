@@ -75,9 +75,9 @@ const categories = [
 
 export default function SchmuckPage() {
   return (
-    <div className="pt-28 pb-24">
+    <div className="pt-24 sm:pt-28 pb-16 sm:pb-24">
       {/* Hero */}
-      <div className="max-w-7xl mx-auto px-6 mb-20 text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12 sm:mb-20 text-center">
         <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">
           Kollektion
         </p>
@@ -92,13 +92,13 @@ export default function SchmuckPage() {
       </div>
 
       {/* Category Navigation */}
-      <div className="max-w-7xl mx-auto px-6 mb-16">
-        <div className="flex flex-wrap justify-center gap-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-10 sm:mb-16">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
           {categories.map((cat) => (
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="px-5 py-2 text-sm tracking-wider uppercase text-text-muted border border-gold/10 rounded-full hover:border-gold/40 hover:text-gold transition-colors"
+              className="px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm tracking-wider uppercase text-text-muted border border-gold/10 rounded-full hover:border-gold/40 hover:text-gold transition-colors"
             >
               {cat.title}
             </a>
@@ -108,8 +108,8 @@ export default function SchmuckPage() {
 
       {/* Categories */}
       {categories.map((category) => (
-        <section key={category.id} id={category.id} className="mb-24 scroll-mt-24">
-          <div className="max-w-7xl mx-auto px-6">
+        <section key={category.id} id={category.id} className="mb-16 sm:mb-24 scroll-mt-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="mb-10">
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-2">
                 {category.title}

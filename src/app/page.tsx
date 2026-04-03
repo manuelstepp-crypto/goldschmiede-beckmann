@@ -199,9 +199,9 @@ export default function HomePage() {
       </section>
 
       {/* Highlights */}
-      <section className="py-24 bg-warm-gray">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+      <section className="py-16 sm:py-24 bg-warm-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">
               Ausgewählte Stücke
             </p>
@@ -210,7 +210,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {highlights.map((item) => (
               <Link
                 key={item.name}

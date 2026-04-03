@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function KontaktPage() {
   return (
-    <div className="pt-28 pb-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="pt-24 sm:pt-28 pb-16 sm:pb-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
           <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">
             Kontakt
           </p>
@@ -105,30 +105,30 @@ export default function KontaktPage() {
                   <h3 className="text-gold text-sm tracking-wider uppercase mb-1">
                     Öffnungszeiten
                   </h3>
-                  <div className="text-text-light/80 space-y-1 text-sm">
-                    <div className="flex justify-between gap-8">
-                      <span>Montag</span>
-                      <span className="text-text-muted">10:00 - 13:00 & 15:00 - 18:00</span>
+                  <div className="text-text-light/80 space-y-1.5 text-sm">
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Mo</span>
+                      <span className="text-text-muted text-right">10-13 & 15-18 Uhr</span>
                     </div>
-                    <div className="flex justify-between gap-8">
-                      <span>Dienstag</span>
-                      <span className="text-text-muted">10:00 - 13:00 & 15:00 - 18:00</span>
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Di</span>
+                      <span className="text-text-muted text-right">10-13 & 15-18 Uhr</span>
                     </div>
-                    <div className="flex justify-between gap-8">
-                      <span>Mittwoch</span>
-                      <span className="text-text-muted/50">geschlossen</span>
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Mi</span>
+                      <span className="text-text-muted/50 text-right">geschlossen</span>
                     </div>
-                    <div className="flex justify-between gap-8">
-                      <span>Donnerstag</span>
-                      <span className="text-text-muted">10:00 - 13:00 & 15:00 - 18:00</span>
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Do</span>
+                      <span className="text-text-muted text-right">10-13 & 15-18 Uhr</span>
                     </div>
-                    <div className="flex justify-between gap-8">
-                      <span>Freitag</span>
-                      <span className="text-text-muted">10:00 - 13:00 & 15:00 - 18:00</span>
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Fr</span>
+                      <span className="text-text-muted text-right">10-13 & 15-18 Uhr</span>
                     </div>
-                    <div className="flex justify-between gap-8">
-                      <span>Samstag</span>
-                      <span className="text-text-muted">10:00 - 14:00</span>
+                    <div className="flex justify-between gap-4">
+                      <span className="shrink-0">Sa</span>
+                      <span className="text-text-muted text-right">10-14 Uhr</span>
                     </div>
                   </div>
                 </div>

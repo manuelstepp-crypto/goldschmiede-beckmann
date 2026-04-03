@@ -17,7 +17,7 @@ export function JewelryGallery({ items }: JewelryGalleryProps) {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
         {items.map((item, index) => (
           <button
             key={item.src}
@@ -29,11 +29,11 @@ export function JewelryGallery({ items }: JewelryGalleryProps) {
               alt={item.name}
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-              <p className="text-sm text-gold font-serif">{item.name}</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent sm:opacity-0 opacity-100 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4 sm:translate-y-full translate-y-0 group-hover:translate-y-0 transition-transform duration-500">
+              <p className="text-xs sm:text-sm text-gold font-serif line-clamp-2">{item.name}</p>
             </div>
           </button>
         ))}
@@ -79,7 +79,7 @@ export function JewelryGallery({ items }: JewelryGalleryProps) {
           )}
 
           <div
-            className="relative max-w-4xl max-h-[80vh] w-full aspect-square"
+            className="relative max-w-4xl max-h-[70vh] w-full aspect-square"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
@@ -89,10 +89,10 @@ export function JewelryGallery({ items }: JewelryGalleryProps) {
               className="object-contain"
               sizes="90vw"
             />
-            <p className="absolute -bottom-10 left-0 right-0 text-center text-gold font-serif text-lg">
-              {items[selectedIndex].name}
-            </p>
           </div>
+          <p className="absolute bottom-6 left-4 right-4 text-center text-gold font-serif text-sm sm:text-lg px-4">
+            {items[selectedIndex].name}
+          </p>
         </div>
       )}
     </>
